@@ -10,6 +10,7 @@ const getSum = () => {
             for(let t of td){
                 sum+=+t.innerText
             }
+			p.style.display='inline'
             p.innerText=`Total Price : ${sum}`
             document.body.appendChild(p)
   
