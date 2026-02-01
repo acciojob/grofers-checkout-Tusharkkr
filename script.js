@@ -4,7 +4,8 @@ document.body.appendChild(getSumBtn);
         let td = document.querySelectorAll('.price')
         let table = document.querySelector('table')
         let tablerow = document.createElement('tr')
-        let tabledata = document.createElement('td')
+        let tabledata1 = document.createElement('td')
+        let tabledata2 = document.createElement('td')
 
 const getSum = () => {
 //Add your code here
@@ -12,8 +13,9 @@ const getSum = () => {
             for(let t of td){
                 sum+=+t.innerText
             }
-			tabledata.innerText=`Total price : ${sum}`
-            tablerow.append(tabledata)
+			tabledata1.innerText=`${sum}`
+	        tabledata2.innerText=`Table`
+            tablerow.append(tabledata2,tabledata1)
             table.append(tablerow)
   
 };
