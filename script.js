@@ -15,6 +15,7 @@ const getSum = () => {
             }
 			tabledata1.innerText=`${sum}`
 	        tabledata2.innerText=`Table`
+	        tablerow.id = 'ans'
             tablerow.append(tabledata2,tabledata1)
             table.append(tablerow)
   
